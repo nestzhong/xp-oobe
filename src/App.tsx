@@ -15,7 +15,7 @@ export const RouterContext = React.createContext({
 })
 
 const App = () => {
-  const [page, setPage] = useState<PageNames>('checkIp')
+  const [page, setPage] = useState<PageNames>('landing')
   const [args, setArgs] = useState<any>(null)
   return <>
     <RouterContext.Provider value={{ goto: (page, arg) => { setPage(page); setArgs(arg) } }}>
